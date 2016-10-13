@@ -1,0 +1,41 @@
+<header id="site-header" class="jumbotron jumbotron-big" {% if page.cover %} style="background-image: url({{ site.image_path }}{{ page.cover }})" {% endif %}>
+	<!-- <video class="video filter" src="http://elegantthemes.com/preview/Divi/wp-content/uploads/2014/04/homepage-slider-bg.mp4" autoplay loop preload="none" muted></video> -->
+	<section class="container">
+		{% if page.title %}<h1>{{ page.title | escape }}</h1>{% endif %}
+		{% if page.subtitle %}<p class="lead">{{ page.subtitle | escape  }}</p>{% endif %}
+	</section>
+</header>
+<div id="site-nav" class="navbar navbar-fixed-top">
+	<div class="container-navbar">
+		<div class="site-brand">
+			<a href="{{ site.url }}" role="home">{{ site.title }}</a>
+		</div>
+		<nav class="site-navigation">
+			<ul>
+				{% for nav in site.data.menu %}
+				{% if nav.subcategories != null %}
+				<li>
+					<a href="{{ site.url }}{{ nav.url }}">{{ nav.title }} ▼</a>
+					<ul>
+						{% for subcategory in nav.subcategories %}
+						<li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+				{% elsif nav.title == page.title %}
+				<li class="active">
+					<a href="{{ nav.url }}">{{ nav.title }}</a>
+				</li>
+				{% else %} 
+				<li>
+					<a href="{{ site.url }}{{ nav.href }}">{{ nav.title }}</a>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+		</ul>				
+
+	</nav>
+	<a href="#" class="ssm-toggle-nav btn-navbar" title="open nav"><span class="fa fa-navicon"></span></a>
+</div>
+</div>

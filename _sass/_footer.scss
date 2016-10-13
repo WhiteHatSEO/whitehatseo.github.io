@@ -1,0 +1,25 @@
+.site-footer {
+	padding: 2rem;
+	border-top: 1px solid #dbdbdb;
+	letter-spacing: 1px;
+	background-color: white;
+
+	.widget-area{
+		.widget-title{
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin-bottom: 0.5rem;
+		}
+		text-transform: uppercase;
+		color: #6c6c6c;
+		font-size: 14px;
+		display: flex;
+	}
+
+	.credits {
+		padding: 1rem;
+		display: block;
+	}
+}

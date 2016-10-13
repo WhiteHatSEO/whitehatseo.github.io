@@ -1,0 +1,18 @@
+aside.widget-area {
+	.widget {
+		padding: 1rem;
+		margin-bottom: 1rem;
+		ul, ol {
+			list-style-type: none;
+			padding: 0;
+		}
+	}
+
+	.widget-title {
+		@include h4();
+	}
+
+	.post-date {
+		display: block;
+	}
+}

@@ -1,0 +1,135 @@
+.navbar {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 60px;
+	align-items: center;
+	font-family: $headings-font-family;
+	justify-content: space-between;
+	background-color: white;
+	z-index: $z-index-top;
+	padding: 5px 0;
+
+	.container-navbar {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 15px;
+		max-width: 100%;
+		width: $container;
+		margin: 0 auto;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+		padding: 15px;
+	}
+	
+	.site-brand {
+		flex: 1;
+		a{
+			//color: white;
+			font-size: 20px;
+			padding: 0;
+			text-transform: uppercase;
+		}
+	}
+
+	.site-navigation {
+		ul {
+			margin: 0;
+			li {
+				display: inline-block;
+			}
+		}
+	}
+
+
+	// Fix the top/bottom navbars when screen real estate supports it
+	&.navbar-fixed-top,
+	&.navbar-fixed-bottom {
+		position: fixed;
+		right: 0;
+		left: 0;
+		-webkit-transition: background-color 0.5s linear, opacity 0.5s;
+		-moz-transition: background-color 0.5s linear, opacity 0.5s;
+		-o-transition: background-color 0.5s linear, opacity 0.5s;
+		-ms-transition: background-color 0.5s linear, opacity 0.5s;
+		transition: background-color 0.5s linear, opacity 0.5s;
+		background-color: transparent;
+	}
+	&.navbar-fixed-top {
+		top: 0;
+	}
+	&.navbar-fixed-bottom {
+		bottom: 0;
+	}
+
+	&.nav-down{
+		background-color: rgba(0, 0, 0, 0.75);
+		opacity: 1;
+	}
+
+	&.nav-up{
+		background-color: rgba(0, 0, 0, 0.75);
+		opacity: 0;
+	}
+
+
+}
+
+.btn-navbar {
+	display: none;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-size: 20px;
+}
+
+@media(max-width: 768px){
+
+	nav.site-navigation {
+		height: 120%;
+		width: 280px;
+		background-color: white;
+		left: 0;
+		top: 0;
+		z-index: 1000000;
+		position: fixed;
+		overflow-y: auto;
+		overflow-x: visible;
+		transform: translate(-280px,0);
+	}
+
+	.site-navigation {
+		ul {
+			margin: 0;
+			li {
+				width: 100%;
+				padding: 10px 20px;
+				a{
+					padding: 0;
+					color: black;
+				}
+			}
+		}
+	}
+
+	.btn-navbar {
+		display: block;
+	}
+	.ssm-overlay {
+		position: fixed;
+		height: 120%;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.2);
+		display: none;
+		z-index: 1;
+	}
+
+}

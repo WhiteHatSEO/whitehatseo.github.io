@@ -1,0 +1,66 @@
+.jumbotron {
+  padding: 2rem 1rem;
+  background-color: #eceeef;
+
+
+  h1, .h1 {
+    @include display-2();
+    @include text-shadow();
+    color: white;
+    position: relative;
+    z-index: 10000;
+  }
+
+  p {
+    @include lead();
+    font-weight: 300;
+    color: white;
+  }
+  .btn {
+    margin-top: 2rem;
+    text-transform: uppercase;
+  }
+
+  section {
+    position: relative;
+  }
+
+  .site-contact {
+    label{
+      font-size: 15px;
+    }
+  }
+
+}
+
+@media (min-width: 544px) {
+  .jumbotron {
+    padding: 4rem 2rem;
+  }
+}
+
+
+@media (max-width: 544px) {
+  .jumbotron {
+    text-align: center;
+
+    .btn {
+      width: 100%;
+    }
+
+    h1, .h1 {
+      @include h1();
+    }
+  }
+
+
+
+}
+
+
+.jumbotron-big {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+}

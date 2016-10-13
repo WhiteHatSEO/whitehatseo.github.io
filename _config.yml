@@ -1,0 +1,39 @@
+#Global Config
+timezone: Europa/Madrid
+
+
+
+# Site settings
+title: SEO
+email: pcasanellasperez@gmail.com
+logo: img/logo-2x.png
+description: La primera comunidad de conocimiento SEO totalmente abierta.
+baseurl: "" # the subpath of your site, e.g. /blog
+permalink: /:title/
+url: "http://192.168.0.200" # the base hostname & protocol for your site
+image_path: "/assets/images/"
+paginate: 10
+paginate_path: "/blog/:num/"
+
+# Google Settings
+#google_site_verification:
+#google_analytics_id: 
+
+
+
+
+#Social
+twitter_username: pcasanellasperez
+facebook_id: 100563910042312
+github_username:  pcasanellasperez
+
+# Build settings
+markdown: kramdown
+
+sass:
+  style: compressed
+
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-paginate

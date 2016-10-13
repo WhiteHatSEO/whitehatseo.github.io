@@ -1,0 +1,60 @@
+.container{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 100%;
+	width: $container;
+	margin: 0 auto;
+	@include clearfix();
+}
+
+.container-fluid {
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+	max-width: 100%;
+	@include clearfix();
+}
+
+.site-container {
+	margin: 0 auto;
+	width: $container;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 25px 15px;
+	@include clearfix();
+}
+
+.footer-container {
+	margin: 0 auto;
+	width: $container;
+	max-width: 100%;
+	padding: 1rem;
+}
+
+.site-main {
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+.site-main, .site-aside {
+	background-color:white;
+	position: relative;
+
+	ul, ol {
+		padding-left: 1rem;
+
+		li{
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	ul {
+		list-style-type: square;
+	}
+
+	ol {
+		list-style-type: decimal;
+	}
+}

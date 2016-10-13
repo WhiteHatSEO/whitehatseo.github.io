@@ -1,0 +1,38 @@
+$body-font-family: 		"Helvetica", "Arial", sans-serif;
+$body-font-size: 		1em;
+$body-color: 			#373a3c;
+$body-background-color: #fff;
+$body-line-height:		1.5;
+$body-font-weight:		400;
+$hr-color:				#ccc;
+
+
+//
+//	Z-INDEX
+//
+
+$z-index-top: 10000;
+$z-index-bottom: 0;
+
+//
+//Colors
+//
+
+
+//ENABLE COLOR CLASS
+$enable-color-basic: true;
+$enable-color-secondary: true;
+$enable-color-tertiary: true;
+
+$color-primary: $color-blue-900;
+$color-primary-contrast: $color-blue-500;
+$color-primary-dark: #eee;
+$color-accent: #eee;
+$color-accent-contrast: #eee;
+$color-link: $color-primary-contrast;
+$color-black: rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+
+
+
+$container: 1200px;
