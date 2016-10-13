@@ -10,7 +10,7 @@ logo: img/logo-2x.png
 description: La primera comunidad de conocimiento SEO totalmente abierta.
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: /:title/
-url: "http://192.168.0.200" # the base hostname & protocol for your site
+url: "https://whitehatseo.github.io" # the base hostname & protocol for your site
 image_path: "/assets/images/"
 paginate: 10
 paginate_path: "/blog/:num/"
